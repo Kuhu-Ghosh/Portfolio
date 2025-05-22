@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+
+  height: 40px;
+  color: aliceblue;
+  background-image: url(image/gettyimages-1448291104-640x640.jpg);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.menu ul li {
+  background: linear-gradient(to left, #dbe8cf, #c4dea1, #a7c796, #7f9f87, #46684c);
+  color: rgb(0, 0, 0);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 20px;
+}
+
+body {
+  background: linear-gradient(135deg, #8cbf75, #d9f3c9);
+  font-family: 'Segoe UI', sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+}
+
+.butt {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.butt:active {
+  box-shadow: 0 0 15px #6ce176, 0 0 25px #03540d, 0 0 40px #fbfbfc;
+  outline: none;
+}
+
+.contact-container{
+    padding-top: 150px;
+  min-height: calc(100vh - 40px); 
+  padding: 120px 20px 60px;
+  box-sizing: border-box;
+
+}
+
+.contact-container h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.highlight {
+  color: #fbfbfb;
+  text-shadow: 0 0 5px #000000;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0e0101;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.icon-block {
+  background: rgba(55, 95, 30, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(36, 69, 7, 0.2);
+  border-radius: 16px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-block:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 20px #000000;
+  border: 1px solid #39750f;
+  cursor: pointer;
+}
+
+.icon-block i {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.icon-block p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #cccccc;
+  padding: 0 10px;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
