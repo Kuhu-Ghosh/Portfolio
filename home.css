@@ -249,18 +249,12 @@ body {
         padding: 10px 0;
     }
 
-    .qualifications {
-        padding: 20px;
-    }
-
     .menu ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .menu ul li {
-        width: 90%;
-        margin: 5px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
     }
 
     .coder, .designer {
@@ -274,29 +268,9 @@ body {
         padding: 10px;
     }
 
-    .project-gallery img {
-        height: 120px;
-    }
-
-    .cert-images {
-        justify-content: center;
-    }
-
-    .cert-images img {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 0;
-    }
-
     .menu ul li {
         width: 100%;
-        max-width: 200px;
-        margin: 5px auto;
     }
 }
+
+

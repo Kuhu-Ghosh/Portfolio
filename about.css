@@ -224,4 +224,18 @@ body {
     font-size: 0.9rem;
     padding: 10px 20px;
   }
+
+  
+     .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
 }
+
